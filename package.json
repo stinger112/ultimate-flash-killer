@@ -1,0 +1,19 @@
+{
+  "title": "Ultimate Flash Killer",
+  "name": "ultimate-flash-killer",
+  "version": "0.0.1",
+  "description": "Disable Flash and hiding its MIME. It enables server-side Flash validation logic (not client-side that existing plugins use). Add-on allowes a user-defined domain whitelist.",
+  "main": "index.js",
+  "author": "Flash Hater",
+  "engines": {
+    "firefox": ">=38.0a1"
+  },
+  "license": "MIT",
+  "preferences": [{
+    "name": "whitelist",
+    "title": "Whitelist of Flash-accepted domains",
+    "description": "Whitelist of domains where Flash is REALLY necessary. Feel free to add comma-separated values manually or automatically by Extension, but be aware: 'www' is domain too.",
+    "type": "string",
+    "value": "www.deezer.com"
+  }]
+}
